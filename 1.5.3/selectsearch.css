@@ -4,11 +4,11 @@ div#SearchSelectBaloon *{
 	}
 div#SearchSelectBaloon {
 position:absolute;
-width:74px;
+width:80px;
 background:#ddd;
 border:1px solid #aaa;
 text-align:left;
-border-radius:5px;
+border-radius:0px;
 z-index:1000;
 line-height:0 !important;
 }
