@@ -102,7 +102,7 @@ myLinks = [{
 		dest: 'Not used' + text,
 		title: 'Copy to clipboad: ' + text,
 		img: chrome.extension.getURL('cp.png'),
-		defaut: 'false',
+		defaut: 'true',
 	},
 	{
 		id: '14',
