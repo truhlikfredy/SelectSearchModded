@@ -93,7 +93,6 @@ var searchSelectBaloon = {
 		searchSelectBaloon.baloon = document.createElement('div');
 		searchSelectBaloon.baloon.id = 'SearchSelectBaloon';
 		document.getElementsByTagName('body')[0].appendChild(this.baloon);
-		searchSelectBaloon.setwidth();
 		searchSelectBaloon.findGoodPosition(e);
 		searchSelectBaloon.links(text,textbrut);
 		searchSelectBaloon.setOpacity(searchSelectBaloon.maxTransparency);
@@ -120,14 +119,7 @@ var searchSelectBaloon = {
         }, 150);
         
     },
-	
-	setwidth : function() {
-		var s = searchSelectBaloon.size;
-		document.getElementById('SearchSelectBaloon').style.width = s + 'px';
-		var h = searchSelectBaloon.height;	
-		//document.getElementById('SearchSelectBaloon').style.height = h + 'px';
-		},
-		
+			
 	findGoodPosition : function(e) {
 		searchSelectBaloon.x = e.pageX;
 		searchSelectBaloon.y = e.pageY;
