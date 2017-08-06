@@ -8,44 +8,44 @@ myLinks = [
 				img:'<img src="'+chrome.extension.getURL('google-ico.png')+'">',
 				defaut:'true',
 				defaultLocale: 'com',
-				} ,
+			},
 			{	
 				id : 'googleimg',
 				dest:'http://www.google.<<googleimgLocale>>/images?q='+text,
 	 	    	title:'Google Image search: '+textb,
 	 	    	img:'<img src="'+chrome.extension.getURL('Google-img-ico.png')+'">',
-	 	    	defaut:'true',
+	 	    	defaut:'false',
 	 	    	defaultLocale: 'com',
-	 	    	} ,
+			},
 			{	
 				id : 'wikipedia',
 				dest:'http://'+'<<wikipediaLocale>>'+'.wikipedia.org/wiki/?search='+text,
 				title:'Wikipedia search: '+textb,
 				img:'<img src="'+chrome.extension.getURL('wikipedia-ico.png')+'">',
-				defaut:'true',
+				defaut:'false',
 				defaultLocale: 'en',
-				} ,
+			},
 			{	
 				id : 'twitter',
 				dest:'http://search.twitter.com/search?q='+text,
 				title:'Twitter search: '+textb,
 				img:'<img src="'+chrome.extension.getURL('twitter.png')+'">',
-				defaut:'true',
-				} ,	
+				defaut:'false',
+			},	
 			{   
 				id : 'binsearch',
 				dest:'http://www.binsearch.info/index.php?q='+text,
 				title:'Binsearch: '+textb,
 				img:'<img src="'+chrome.extension.getURL('binsearch.png')+'">',
 				defaut:'false',
-				} ,	
+			},	
 			{   
 				id : 'facebook',
 				dest:'http://www.facebook.com/srch.php?nm='+text,
 				title:'Facebook: '+textb,
 				img:'<img src="'+chrome.extension.getURL('facebook.png')+'">',
 				defaut:'false',
-				} ,	
+			},	
 			{   
 				id : 'ebay',
 				dest:'http://shop.ebay.<<ebayLocale>>/'+text,
@@ -53,7 +53,7 @@ myLinks = [
 				img:'<img src="'+chrome.extension.getURL('ebay.png')+'">',
 				defaut:'false',
 				defaultLocale: 'com',
-				},
+			},
 			{   
 				id : 'gmap',
 				dest:'http://maps.google.<<gmapLocale>>/?q='+text,
@@ -61,7 +61,7 @@ myLinks = [
 				img:'<img src="'+chrome.extension.getURL('gmap.png')+'">',
 				defaut:'false',
 				defaultLocale: 'com',
-				} ,
+			},
 			{   
 				id : 'youtube',
 				dest:'http://www.youtube.<<youtubeLocale>>/results?search_query='+text,
@@ -69,121 +69,121 @@ myLinks = [
 				img:'<img src="'+chrome.extension.getURL('youtube.png')+'">',
 				defaut:'false',
 				defaultLocale: 'com',
-				},
+			},
 			{   
 				id : 'geograph',
 				dest:'http://www.geograph.org.uk/search.php?q='+text,
 				title:'Search on Geograph: '+textb,
 				img:'<img src="'+chrome.extension.getURL('geograph.png')+'">',
 				defaut:'false',
-				},
+			},
 			{   
 				id : 'Flickr',
 				dest:'http://www.flickr.com/search/?q='+text,
 				title:'Search with Flickr: '+textb,
 				img:'<img src="'+chrome.extension.getURL('flickr.png')+'">',
 				defaut:'false',
-				},
+			},
 			{   
-    			id : 'asLink',
-    			dest:'<<http>>'+textb,
-    			title:'Direct open: '+textb,
-    			img:'<img src="'+chrome.extension.getURL('link.png')+'">',
-    			defaut:'false',
-    		    } ,
-    		{   
-        		id : 'nzbindex',
-        		dest:'http://nzbindex.nl/search/?q='+text,
-        		title:'Search with Nzbindex.nl: '+textb,
-        		img:'<img src="'+chrome.extension.getURL('nzbnl.png')+'">',
-        		defaut:'false',
-        		},
-        	{   
-            	id : 'cpboard',
-            	dest:'Not used'+text,
-            	title:'Copy to clipboad: '+text,
-            	img:chrome.extension.getURL('cp.png'),
-            	defaut:'false',
-            		},
-            {   
-                id : '14',
-                dest:'<<14eng>>',
-                title:'Custom search: '+textb,
-                img:'<img src="<<14img>>"/>',
-                defaut:'false',
-                custom:'true',
-                },
-            {   
-                id : '15',
-                dest:'<<15eng>>',
-                title:'Custom search: '+textb,
-                img:'<img src="<<15img>>"/>',
-                defaut:'false',
-                custom:'true',
-                    },
-            {   
-        		id : 'googletr',
-        		dest:'http://translate.google.fr/?q='+text, 
-        		title:'Google translate: '+textb,
-        		img:'<img src="'+chrome.extension.getURL('GoogleTranslate.png')+'">',
-        		defaut:'false',
-        		defaultLocale: 'com',
-        	},
-        	{   
-                id : '17',
-                dest:'<<17eng>>',
-                title:'Custom search: '+textb,
-                img:'<img src="<<17img>>"/>',
-                defaut:'false',
-                custom:'true',
-                    },
-            {   
-                id : '18',
-                dest:'<<18eng>>',
-                title:'Custom search: '+textb,
-                img:'<img src="<<18img>>"/>',
-                defaut:'false',
-                custom:'true',
-                    },
-            {   
-                id : '19',
-                dest:'<<19eng>>',
-                title:'Custom search: '+textb,
-                img:'<img src="<<19img>>"/>',
-                defaut:'false',
-                custom:'true',
-                },                    
-            {   
-                id : '20',
-                dest:'<<20eng>>',
-                title:'Custom search: '+textb,
-                img:'<img src="<<20img>>"/>',
-                defaut:'false',
-                custom:'true',
-                },
-            {   
-    			id : 'baidu',
-    			dest:'http://www.baidu.com/s?wd='+text, 
-    			title:'Baidu search: '+textb,
-    			img:'<img src="'+chrome.extension.getURL('baidu-ico.png')+'">',
-    			defaut:'false',
-    			},
-    		{   
-                id : '22',
-                dest:'<<22eng>>',
-                title:'Custom search: '+textb,
-                img:'<img src="<<22img>>"/>',
-                defaut:'false',
-                custom:'true',
-                },
-            {   
-                id : '23',
-                dest:'<<22eng>>',
-                title:'Custom search: '+textb,
-                img:'<img src="<<23img>>"/>',
-                defaut:'false',
-                custom:'true',
-                }	                              			
+				id : 'asLink',
+				dest:'<<http>>'+textb,
+				title:'Direct open: '+textb,
+				img:'<img src="'+chrome.extension.getURL('link.png')+'">',
+				defaut:'true',
+			},
+			{   
+				id : 'nzbindex',
+				dest:'http://nzbindex.nl/search/?q='+text,
+				title:'Search with Nzbindex.nl: '+textb,
+				img:'<img src="'+chrome.extension.getURL('nzbnl.png')+'">',
+				defaut:'false',
+			},
+			{   
+				id : 'cpboard',
+				dest:'Not used'+text,
+				title:'Copy to clipboad: '+text,
+				img:chrome.extension.getURL('cp.png'),
+				defaut:'false',
+			},
+			{   
+				id : '14',
+				dest:'<<14eng>>',
+				title:'Custom search: '+textb,
+				img:'<img src="<<14img>>"/>',
+				defaut:'false',
+				custom:'true',
+			},
+			{   
+				id : '15',
+				dest:'<<15eng>>',
+				title:'Custom search: '+textb,
+				img:'<img src="<<15img>>"/>',
+				defaut:'false',
+				custom:'true',
+			},
+			{   
+				id : 'googletr',
+				dest:'http://translate.google.fr/?q='+text, 
+				title:'Google translate: '+textb,
+				img:'<img src="'+chrome.extension.getURL('GoogleTranslate.png')+'">',
+				defaut:'false',
+				defaultLocale: 'com',
+			},
+			{   
+				id : '17',
+				dest:'<<17eng>>',
+				title:'Custom search: '+textb,
+				img:'<img src="<<17img>>"/>',
+				defaut:'false',
+				custom:'true',
+			},
+			{   
+				id : '18',
+				dest:'<<18eng>>',
+				title:'Custom search: '+textb,
+				img:'<img src="<<18img>>"/>',
+				defaut:'false',
+				custom:'true',
+			},
+			{   
+				id : '19',
+				dest:'<<19eng>>',
+				title:'Custom search: '+textb,
+				img:'<img src="<<19img>>"/>',
+				defaut:'false',
+				custom:'true',
+			},                    
+			{   
+				id : '20',
+				dest:'<<20eng>>',
+				title:'Custom search: '+textb,
+				img:'<img src="<<20img>>"/>',
+				defaut:'false',
+				custom:'true',
+			},
+			{   
+				id : 'baidu',
+				dest:'http://www.baidu.com/s?wd='+text, 
+				title:'Baidu search: '+textb,
+				img:'<img src="'+chrome.extension.getURL('baidu-ico.png')+'">',
+				defaut:'false',
+			},
+			{   
+				id : '22',
+				dest:'<<22eng>>',
+				title:'Custom search: '+textb,
+				img:'<img src="<<22img>>"/>',
+				defaut:'false',
+				custom:'true',
+			},
+			{   
+				id : '23',
+				dest:'<<22eng>>',
+				title:'Custom search: '+textb,
+				img:'<img src="<<23img>>"/>',
+				defaut:'false',
+				custom:'true',
+			}	                              			
 		];
       
 
@@ -221,13 +221,13 @@ function getUse(){
 
 function getFadeTime() {
 	var rep = localStorage['fadeTime']
-    if (rep == null) rep = '1500';
+    if (rep == null) rep = '1000';
     return(rep);
 	}
 
 function getRemoveTime() {
 	var rep = localStorage['removeTime']
-    if (rep == null) rep = '1300';
+    if (rep == null) rep = '1500';
     return(rep);
 	}
 
@@ -352,7 +352,7 @@ function tr(text){
 
 function getTransparency(){
 	var rep = localStorage['transparency']
-    if (rep == null) rep = '80';
+    if (rep == null) rep = '99';
     return(rep);
 	}
 
