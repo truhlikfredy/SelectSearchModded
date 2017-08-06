@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+<head>
+	<title>Select Search Options</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+	<script type="text/javascript" src="jquery-1.8.1.min.js"></script> 
+    <script type="text/javascript" src="jquery-ui-1.8.23.custom.min.js"></script>
+ 	<script type="text/javascript" src="common.js"></script> 
+    <script type="text/javascript" src="options.js"></script>
+
+	<style type="text/css">
+  		@import url(selectsearch.css);
+	</style>
+	<style>
+		#boxes {
+			margin:0;
+			padding:0;
+			list-style-type:none;	
+		}
+		div.clear {
+			clear:both;
+			line-height:0;
+			}
+		#boxes li{
+			margin-bottom:0.5em;
+			margin-top:0.5em;
+			background:#eee;
+			border: #ccc solid 1px;
+			border-radius: 5px;
+			height: 3em;
+			width: 23%;
+			display : inline-block;
+			margin:0.5%;
+		    float : left;
+			}
+		
+	</style>
+</head>
+<body>
+<h1>Select Search Options</h1>
+<form name='display'>
+<p>Select the icons in the baloon. You can use drag'n drop on gray items, it will change the icons order of the baloon :</p>
+<ul id='boxes'>
+
+<li id='0'><input type='checkbox' class='saveoptionsonchange' />Google Search <br/>
+Use Google 
+<select id='0locale' class='saveoptionsonchange'>  
+ <option value="com">.com</option>
+ <option value="fr">.fr</option>
+ <option value="de">.de</option>
+ <option value="nl">.nl</option>
+ <option value="es">.es</option>
+ <option value="ru">.ru</option>
+ <option value="com.au">.com.au</option>
+ <option value="co.uk">.co.uk</option>
+ <option value="co.za">.co.za</option>
+ <option value="pl">.pl</option>
+ <option value="ca">.ca</option>		
+ <option value="hu">.hu</option>		
+		
+		
+</select> 
+</li>
+
+<li id='1'><input type='checkbox' class='saveoptionsonchange' />Google Image Search <br/>
+Use Google Img
+<select id='1locale' class='saveoptionsonchange'>  
+ <option value="com">.com</option>
+ <option value="fr">.fr</option>
+ <option value="de">.de</option>
+ <option value="nl">.nl</option>
+ <option value="es">.es</option>
+ <option value="ru">.ru</option>
+ <option value="com.au">.com.au</option>
+ <option value="co.uk">.co.uk</option>
+ <option value="co.za">.co.za</option>
+ <option value="pl">.pl</option>		
+ <option value="ca">.ca</option>		
+ <option value="hu">.hu</option>		
+		
+</select>
+</li>
+
+<li id='2'><input type='checkbox' class='saveoptionsonchange' />Wikipedia Search.<br/>
+Use wikipedia in 
+<select id='2locale' class='saveoptionsonchange'>  
+ <option value="en">English </option>
+ <option value="fr">Français</option>
+ <option value="de">Deutsch</option>
+ <option value="nl">Dutch</option>
+ <option value="es">Español</option>
+ <option value="ru">Pусском</option>
+ <option value="pl">Polish</option>		
+
+</select> 
+</li>
+
+<li id='3'><input type='checkbox' class='saveoptionsonchange' />Twitter Search </li>
+
+<li id='4'><input type='checkbox' class='saveoptionsonchange' />BinSearch</li>
+
+<li id='5'><input type='checkbox' class='saveoptionsonchange' />Facebook</li>
+
+<li id='6'><input type='checkbox' class='saveoptionsonchange' />Search on ebay.<br/>
+Use ebay 
+<select id='6locale' class='saveoptionsonchange'>  
+ <option value="com">.com</option>
+ <option value="fr">.fr</option>
+ <option value="de">.de</option>
+ <option value="nl">.nl</option>
+ <option value="es">.es</option>
+ <option value="ru">.ru</option>
+ <option value="com.au">.com.au</option>
+ <option value="pl">.pl</option>
+ <option value="ca">.ca</option>		
+	
+</select> 
+
+<li id='7'><input type='checkbox' class='saveoptionsonchange' />Google Maps<br/>
+Use Gmap 
+<select id='7locale' class='saveoptionsonchange'>  
+ <option value="com">.com</option>
+ <option value="fr">.fr</option>
+ <option value="de">.de</option>
+ <option value="nl">.nl</option>
+ <option value="es">.es</option>
+ <option value="ru">.ru</option>
+ <option value="com.au">.com.au</option>
+<option value="co.uk">.co.uk</option>
+<option value="pl">.pl</option>		
+<option value="ca">.ca</option>		
+<option value="hu">.hu</option>		
+	
+
+</select> 
+</li>
+
+<li id='8'><input type='checkbox' class='saveoptionsonchange' />YouTube<br/>
+Use YouTube 
+<select id='8locale' class='saveoptionsonchange'>  
+ <option value="com">.com</option>
+ <option value="fr">.fr</option>
+ <option value="de">.de</option>
+ <option value="nl">.nl</option>
+ <option value="es">.es</option>
+ <option value="ru">.ru</option>
+ <option value="com.au">.com.au</option>
+<option value="co.uk">.co.uk</option>
+<option value="pl">.pl</option>		
+	
+
+</select> 
+
+
+</li>
+
+<li id='9'><input type='checkbox' class='saveoptionsonchange' />Geograph<br/> 
+Uk and Ireland photos. 
+</li>
+
+<li id='10'><input type='checkbox' class='saveoptionsonchange' />Flickr<br/>
+</li>
+
+<li id='11'><input type='checkbox' class='saveoptionsonchange' />Opens selected text in new tab <br/>(tries to turn the text into link.)<br/>
+</li>
+
+<li id='12'><input type='checkbox' class='saveoptionsonchange' />Nzbindex.nl<br/>
+</li>
+
+<li id='13'><input type='checkbox' class='saveoptionsonchange' />Copy selected text to clipboard<br/>
+</li>
+
+<li id='14'><input type='checkbox' class='saveoptionsonchange' />
+		&nbsp;Engine: <input style='width:65%'  type='text' id='14eng' size='' class='saveoptionsonchange' value='http://www.google.fr/search?q=<<text>>'/> <br/>
+		Image path: <input style='width:65%'  type='text' id='14img' size='' class='saveoptionsonchange' value='http://www.google.fr/images/google_favicon_128.png'/>
+</li>
+
+
+<li id='15'><input type='checkbox' class='saveoptionsonchange' />
+		&nbsp;Engine: <input style='width:65%' type='text' id='15eng' size='' class='saveoptionsonchange' value='http://www.google.fr/search?q=<<text>>'/> <br/>
+		Image path: <input style='width:65%' type='text' id='15img' size='' class='saveoptionsonchange' value='http://www.google.fr/images/google_favicon_128.png'/>
+</li>
+
+<li id='16'><input type='checkbox' class='saveoptionsonchange' />Google Translate <br/>
+Use  
+<select id='16locale' class='saveoptionsonchange'>  
+ <option value="com">.com</option>
+ <option value="fr">.fr</option>
+ <option value="de">.de</option>
+ <option value="nl">.nl</option>
+ <option value="es">.es</option>
+ <option value="ru">.ru</option>
+ <option value="com.au">.com.au</option>
+ <option value="co.uk">.co.uk</option>
+ <option value="co.za">.co.za</option>
+ <option value="pl">.pl</option>		
+</select> 
+</li>
+
+<li id='17'><input type='checkbox' class='saveoptionsonchange' />
+		&nbsp;Engine: <input style='width:65%' type='text' id='17eng' size='' class='saveoptionsonchange' value='http://www.google.fr/search?q=<<text>>'/> <br/>
+		Image path: <input style='width:65%' type='text' id='17img' size='' class='saveoptionsonchange' value='http://www.google.fr/images/google_favicon_128.png'/>
+</li>
+
+<li id='18'><input type='checkbox' class='saveoptionsonchange' />
+		&nbsp;Engine: <input style='width:65%' type='text' id='18eng' size='' class='saveoptionsonchange' value='http://www.google.fr/search?q=<<text>>'/> <br/>
+		Image path: <input style='width:65%' type='text' id='18img' size='' class='saveoptionsonchange' value='http://www.google.fr/images/google_favicon_128.png'/>
+</li>
+
+<li id='19'><input type='checkbox' class='saveoptionsonchange' />
+		&nbsp;Engine: <input style='width:65%' type='text' id='19eng' size='' class='saveoptionsonchange' value='http://www.google.fr/search?q=<<text>>'/> <br/>
+		Image path: <input style='width:65%' type='text' id='19img' size='' class='saveoptionsonchange' value='http://www.google.fr/images/google_favicon_128.png'/>
+</li>
+
+<li id='20'><input type='checkbox' class='saveoptionsonchange' />
+		&nbsp;Engine: <input style='width:65%' type='text' id='20eng' size='' class='saveoptionsonchange' value='http://www.google.fr/search?q=<<text>>'/> <br/>
+		Image path: <input style='width:65%' type='text' id='20img' size='' class='saveoptionsonchange' value='http://www.google.fr/images/google_favicon_128.png'/>
+</li>
+
+<li id='21'><input type='checkbox' class='saveoptionsonchange' />Baidu Search </li>
+<li id='22'><input type='checkbox' class='saveoptionsonchange' />
+		&nbsp;Engine: <input style='width:65%' type='text' id='22eng' size='' class='saveoptionsonchange' value='http://www.google.fr/search?q=<<text>>'/> <br/>
+		Image path: <input style='width:65%' type='text' id='22img' size='' class='saveoptionsonchange' value='http://www.google.fr/images/google_favicon_128.png'/>
+</li>
+<li id='23'><input type='checkbox' class='saveoptionsonchange' />
+		&nbsp;Engine: <input style='width:65%' type='text' id='23eng' size='' class='saveoptionsonchange' value='http://www.google.fr/search?q=<<text>>'/> <br/>
+		Image path: <input style='width:65%' type='text' id='23img' size='' class='saveoptionsonchange' value='http://www.google.fr/images/google_favicon_128.png'/>
+</li>
+
+
+</ul>
+<div class="clear"></div>
+<hr/>
+<table>
+<tr><td>Maximum number of columns (init 4) </td><td><input id="maxNumberOfCols" type='text' name="maxNumberOfCols" class='saveoptionsonchange'/></td></tr>
+<tr><td>Transparency of the baloon when active (init 80)</td><td> <input id="transparency" type='text' name="transparency" class='saveoptionsonchange'/></td></tr>
+<tr><td>Time before fading the ballon (init 1500) </td><td> <input id="fadeTime" type='text' name="fadeTime" class='saveoptionsonchange'/>ms </td></tr>
+<tr><td>Time before removing the baloon once it is faded (init 1300) </td><td><input id="removeTime" type='text' name="removeTime" class='saveoptionsonchange'/>ms</td></tr>
+<tr><td>Language of the help baloon :</td><td>
+<select name='lang' class='saveoptionsonchange'>  
+ <option value="en">English </option>
+ <option value="fr">Français</option>
+ <option value="de">Deutsch</option>
+ <option value="nl">Dutch</option>
+ <option value="es">Español</option>
+ <option value="ru">русском</option>
+</select> 
+</td></tr>
+
+</table>
+
+
+<p><i>A possible cool setting is to use a very short time to fade an long one before vanish, so the ballon is almost invisible but when hovered it becomes more readable (ie : transparency 85, fade Time 0, remove time 3000 or more). </i></p>
+<hr/>
+<h3>Here it is a preview of the baloon.</h3>
+<p>
+<div id='SearchSelectBaloon'></div>
+<p>
+Sed a wisi. Suspendisse adipiscing iaculis. Curabitur nunc. Suspendisse potenti. In pharetra. Suspendisse turpis viverra a, tortor. Nulla semper. Sed tempus ultrices, velit in velit odio id ipsum. Nam pharetra ut, leo. In euismod nulla ut quam. Nam pellentesque erat lacinia eros sed felis sit amet magna. In hac habitasse platea dictumst. Quisque pharetra, urna accumsan lorem. Nullam rutrum rhoncus. Praesent ac mauris rhoncus libero wisi, sed ante ipsum primis in faucibus in, ornare quam.
+</p>
+<hr/>
+
+<p>Opens clicked links in</p>  
+ <select name="openIn" class='saveoptionsonchange'>  
+ <option value="_blank">Follow Chrome policy</option>
+ <option value="_new">New Tab (in Frame _ss_nameOfTheSearch)</option>
+ <option value="_back">New Tab (in the background)</option>
+ <option value="_backf">Left click : New Tab in the front ; Right click : new  tab in the background</option>
+ <option value="_backfo">Right click : New Tab in the front ; Left click : new  tab in the background</option>
+ <option value="_self">Use current tab to search</option>
+ <option value="_ss">Only one new tab for all searches</option>
+</select> 
+
+<hr/>
+<p><button id="saver">Save</button> <span id='status'></span><br/>
+<button id="reset" >Reset All</button> </p>
+
+</form>
+
+
+<div id='log'></div>
+</body>
+</html>

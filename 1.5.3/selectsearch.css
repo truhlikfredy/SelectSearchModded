@@ -1,0 +1,30 @@
+div#SearchSelectBaloon *{
+	padding : 0 !important;
+	margin : 0 !important;
+	}
+div#SearchSelectBaloon {
+position:absolute;
+width:74px;
+background:#ddd;
+border:1px solid #aaa;
+text-align:left;
+border-radius:5px;
+z-index:1000;
+line-height:0 !important;
+}
+div#SearchSelectBaloon img{
+margin:2px !important;
+border: 0 none !important;
+width:20px !important;
+clear:none !important;
+display:inline !important;
+}
+div#SearchSelectBaloon a{
+margin: 0 !important;
+border: 0 !important;
+padding:0 !important;
+}
+div#SearchSelectBaloon .clickOnSearchSelectBaloonCp {
+margin:3px !important;
+width:16px !important;
+}
